@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/minimalism_sky_clouds_sun_mountains_lake_landscape_95458_1920x1080"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+
+    <RelativeLayout
+        android:id="@+id/loginBox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edit_round"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/loginBox"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:paddingTop="30dp"
+            tools:ignore="NotSibling">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/Username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:drawableLeft="@drawable/signin"
+                android:hint="@string/user_name"
+                android:padding="5dp"
+                android:textColor="@color/colorwhite"
+                android:textColorHint="@color/colorwhite"
+                android:textSize="18sp"
+                app:met_baseColor="@color/colorwhite"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/colorwhite"
+                app:met_singleLineEllipsis="true"
+                app:met_textColor="@color/colorwhite" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:drawableLeft="@drawable/lock"
+                android:hint="@string/password"
+                android:padding="5dp"
+                android:textColor="@color/colorwhite"
+                android:textColorHint="@color/colorwhite"
+                android:textSize="18sp"
+                app:met_baseColor="@color/colorwhite"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/colorwhite"
+                app:met_singleLineEllipsis="true" />
+
+            <Button
+                android:id="@+id/Reset"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="Forget Password?"
+
+                android:textAllCaps="false"
+                android:textColor="@color/colorwhite"
+                android:textSize="10sp" />
+
+
+            <Button
+                android:id="@+id/sign_in"
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_round"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:textColor="@color/colorText"
+                android:textSize="18sp" />
+
+            <Button
+                android:layout_gravity="center"
+            android:id="@+id/sign_up"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textAllCaps="false"
+            android:text="@string/sign_up"
+            android:textColor="@color/colorwhite" />
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/user_profile_photo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/user_profile_image_background"
+        android:elevation="4dp"
+        android:src="@drawable/boy" />
+
+</RelativeLayout>
+
+
